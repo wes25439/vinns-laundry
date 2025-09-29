@@ -67,7 +67,11 @@
       animation: shake 3s ease-in-out infinite;
       transform-origin: 90px 367.5px;
     }
-
+   .loader-section {
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, #ffffff, #e3f2fd, #90caf9, #1976d2);
+  text-align: center;
+    }
     .loader-top {
       width: 180px;
       height: 60px;
@@ -218,6 +222,87 @@
 }
 
 .services h2 { font-size: 2rem; margin-bottom: 1.2rem; color: #1976d2; text-align: center; }
+
+
+.budget {
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, #ffffff, #e3f2fd, #90caf9, #1976d2);
+  text-align: center;
+}
+
+.budget h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1976d2;
+}
+
+.budget-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.budget-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.budget-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.budget-card h3 {
+  margin: 0.8rem 0;
+  color: #1976d2;
+}
+
+.budget-card p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.service-icon {
+  font-size: 2.2rem;
+  color: #1976d2;
+  background: #e3f2fd;
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #ffffff, #e3f2fd);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #90caf9, #1976d2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #42a5f5, #1565c0);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1976d2 #e3f2fd;
+}
+
 
     footer {
       background: #1976d2;
