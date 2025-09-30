@@ -49,9 +49,9 @@ header nav ul {
 }
 
 header nav ul li a {
-  color: rgb(31, 159, 245);
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -65,7 +65,7 @@ header nav ul li a:hover {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: rgb(116, 195, 248);
+  color: rgb(138, 208, 255);
 }
 
 /* ===== Responsive Navigation ===== */
