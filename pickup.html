@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="wash.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+  <div class="logo">Vinns Laundry</div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <!-- Nav Links -->
+  <nav>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+    
+      
+    </ul>
+  </nav>
+</header>
+
+
+
+
+<body>
+    <!-- Request Pick Up Section -->
+<section id="pickup" class="pickup-section">
+  <h2>Request Pick Up</h2>
+  
+  <form id="pickupForm" class="pickup-form">
+    <div class="form-group">
+      <label for="building">Building Name</label>
+      <input type="text" id="building" name="building" placeholder="Enter building name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="house">House Number</label>
+      <input type="text" id="house" name="house" placeholder="Enter house number" required>
+    </div>
+
+    <div class="form-group">
+      <label for="info">Additional Information</label>
+      <textarea id="info" name="info" placeholder="E.g. Contact Refrence,pick up time ..." rows="4"></textarea>
+    </div>
+
+    <button type="submit" class="gradient-btn">Request Pick Up</button>
+  </form>
+</section>
+
+<style>
+/* Section */
+.pickup-section {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, #ffffff, #e6f4ff);
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 3rem auto;
+  box-shadow: 0 6px 25px rgba(31, 159, 245, 0.15);
+  text-align: center;
+}
+
+/* Heading */
+.pickup-section h2 {
+  font-size: 2rem;
+  color: #1f9ff5;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* Form */
+.pickup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Form groups */
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.95rem;
+  color: #1f9ff5;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #cce7ff;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #1f9ff5;
+  box-shadow: 0 0 8px rgba(31, 159, 245, 0.2);
+}
+
+/* Button (reuse your gradient-btn styling) */
+.gradient-btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #1f9ff5, #66d1ff);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+  background: linear-gradient(135deg, #66d1ff, #1f9ff5);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(31, 159, 245, 0.35);
+}
+</style>
+
+<script>
+document.getElementById("pickupForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  // Capture input values
+  const building = document.getElementById("building").value;
+  const house = document.getElementById("house").value;
+  const info = document.getElementById("info").value;
+
+  // WhatsApp number
+  const phoneNumber = "254708808854";
+
+  // Create message
+  const message = `Hello, I would like to request a pick up.%0A
+🏢 Building: ${building}%0A
+🏠 House Number: ${house}%0A
+📝 Additional Info: ${info}`;
+
+  // Redirect to WhatsApp
+  window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+});
+</script>
+
+    <script src="js.js"></script>
+</body>
+</html>

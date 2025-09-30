@@ -160,9 +160,9 @@ header nav ul li a:hover {
       background-color: #fff;
       background-repeat: no-repeat;
       background-image: 
-          linear-gradient(#add 50%, #bbb 51%), 
-          linear-gradient(#add, #ddd), 
-          linear-gradient(#add, #ddd), 
+          linear-gradient(#90caf9 50%, #bbb 51%), 
+          linear-gradient(rgb(126, 182, 255), #ddd), 
+          linear-gradient(#90caf9, #ddd), 
           radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%), 
           radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%);
       background-position: 
