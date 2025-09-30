@@ -12,9 +12,23 @@
 </head>
 <body>
 
-  <header>
-    Vinns Laundry
-  </header>
+  
+<header>
+  <div class="logo">Vinns Laundry</div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <!-- Nav Links -->
+  <nav>
+    <ul id="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#budget">Our Budget</a></li>
+      <li><a href="#pickup">Request Pick Up</a></li>
+    </ul>
+  </nav>
+</header>
+  
 
   <section class="hero">
     <h1>Fresh, Clean, and Bright Laundry</h1>
@@ -84,6 +98,13 @@
   <footer>
     © 2025 Vinns Laundry | All Rights Reserved
   </footer>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
 
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 </body>
 </html>

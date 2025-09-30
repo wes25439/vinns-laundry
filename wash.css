@@ -1,3 +1,15 @@
+  /* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  
+} 
+   
+   
+   
    body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,15 +19,83 @@
 }
 
 
-    header {
-      background: #1976d2;
-      color: white;
-      padding: 1.2rem 2rem;
-      text-align: center;
-      font-size: 1.5rem;
-      font-weight: bold;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+   /* ===== Header Styling ===== */
+header {
+  background: linear-gradient(135deg, #42a5f5, #1976d2);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #bbdefb;
+}
+
+/* ===== Hamburger Styling ===== */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ===== Responsive Navigation ===== */
+@media (max-width: 768px) {
+  header nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: linear-gradient(135deg, #42a5f5, #1976d2);
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    gap: 0;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  header nav ul li {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  header nav ul.show {
+    max-height: 300px; /* Smooth slide down */
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
 
     .hero {
       display: flex;
