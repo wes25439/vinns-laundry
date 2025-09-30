@@ -37,7 +37,7 @@ header .logo {
   font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 1px;
- color: linear-gradient(135deg, #f5f4f4, #e3f2fd, #90caf9, #1976d2);;
+ color: linear-gradient(135deg, #f5f4f4, #e3f2fd, #90caf9, #1976d2);
 }
 
 header nav ul {
@@ -181,15 +181,21 @@ header nav ul li a:hover {
       border-radius: 12px 12px 0 0;
     }
 
-    .name {
-      width: 180px;
-      text-align: center;
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bold;
-      font-size: 57px;
-      color: #444;
-      margin: 2px;
-    }
+   .name {
+  width: 180px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 57px;
+  margin: 2px;
+
+  /* gradient text */
+  background: linear-gradient(90deg, #224586, #2a5298, #d1f5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* fallback */
+  color: transparent;
+}
 
     .loader-bottom {
       width: 180px;
