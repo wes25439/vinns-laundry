@@ -441,3 +441,108 @@ footer a:hover {
   color: #e3f2fd;
 }
   
+
+
+/* ===== General Mobile Adjustments ===== */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header tweaks */
+  header {
+    padding: 0.8rem 1rem;
+  }
+  header .logo {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    padding: 2.5rem 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .service-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .budget-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gradient-btn {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Mobile phones */
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .service-box {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-box {
+    grid-template-columns: 1fr;
+  }
+
+  .service, .budget-card {
+    padding: 1.2rem;
+  }
+
+  .gradient-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  footer {
+    padding: 1.5rem 0.8rem;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+  }
+
+  .footer-location {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Extra small phones */
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  header .logo {
+    font-size: 1.1rem;
+  }
+
+  .gradient-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
