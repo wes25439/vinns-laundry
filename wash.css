@@ -190,7 +190,7 @@ header nav ul li a:hover {
   margin: 2px;
 
   /* gradient text */
-  background: linear-gradient(1.2deg, #1976d2,#81bef0,#e3f2fd,#a4d6ff);
+  background: linear-gradient(5deg, #197de0,#65b2f1,#80c2f8,#feffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text; /* fallback */
