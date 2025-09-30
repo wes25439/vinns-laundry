@@ -65,7 +65,7 @@ header nav ul li a:hover {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: rgb(138, 208, 255);
+  color: white;
 }
 
 /* ===== Responsive Navigation ===== */
